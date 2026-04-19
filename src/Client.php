@@ -28,10 +28,11 @@ readonly class Client
 
     /**
      * @param string $apiKey
+     * @param array $options
      */
-    public function __construct(string $apiKey)
+    public function __construct(string $apiKey, array $options = [])
     {
-        $connection = new Connection($apiKey, new HttpClient());
+        $connection = new Connection($apiKey, new HttpClient(), $options);
         $this->address = new Address($connection);
         $this->counterparty = new Counterparty($connection);
         $this->contactPerson = new ContactPerson($connection);

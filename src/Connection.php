@@ -19,15 +19,18 @@ class Connection
     private const ERROR_MSG_TEMPLATE = 'Connection to Nova Poshta API failed: %s';
     private string $apiKey;
     private HttpClient $client;
+    private array $options;
 
     /**
      * @param string $apiKey
      * @param HttpClient $client
+     * @param array $options
      */
-    public function __construct(string $apiKey, HttpClient $client)
+    public function __construct(string $apiKey, HttpClient $client, array $options = [])
     {
         $this->apiKey = $apiKey;
         $this->client = $client;
+        $this->options = $options;
     }
 
     /**
@@ -41,20 +44,17 @@ class Connection
     public function post(string $model, string $method, array $params = []): array
     {
         try {
+
             $request = array_filter([
                 'apiKey' => $this->apiKey,
                 'modelName' => $model,
                 'calledMethod' => $method,
                 'methodProperties' => $params
             ]);
-            $response = $this->client->request('POST', self::API_URI, [
-                RequestOptions::TIMEOUT => 10,
-                RequestOptions::BODY => Utils::jsonEncode($request, JSON_UNESCAPED_UNICODE),
-                RequestOptions::HEADERS => [
-                    'content-type' => 'application/json',
-                    'Accept' => 'application/json'
-                ]
-            ]);
+
+            $options = $this->buildOptions($request);
+
+            $response = $this->client->request('POST', self::API_URI, $options);
             if ($response->getStatusCode() !== 200) {
                 throw new NovaPoshtaApiException(sprintf(self::ERROR_MSG_TEMPLATE, $response->getReasonPhrase()));
             }
@@ -85,5 +85,26 @@ class Connection
             throw new NovaPoshtaApiException('Invalid response from Nova Poshta API');
         }
         return $result;
+    }
+
+    /**
+     * @param array $request
+     * @return array
+     */
+    public function buildOptions(array $request): array
+    {
+        $defaultOptions = [
+            RequestOptions::TIMEOUT => 30,
+        ];
+
+        $mandatoryOptions = [
+            RequestOptions::BODY => Utils::jsonEncode($request, JSON_UNESCAPED_UNICODE),
+            RequestOptions::HEADERS => [
+                'content-type' => 'application/json',
+                'Accept' => 'application/json'
+            ]
+        ];
+
+        return array_merge($defaultOptions, $this->options, $mandatoryOptions);
     }
 }
