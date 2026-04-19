@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Tests\Unit\Models\Address;
+namespace SergiyNezbritskiy\NovaPoshta\Tests\Unit\Models\Address;
 
 use PHPUnit\Framework\MockObject\Exception;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
-use SergeyNezbritskiy\NovaPoshta\Connection;
-use SergeyNezbritskiy\NovaPoshta\Models\Address;
-use SergeyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
+use SergiyNezbritskiy\NovaPoshta\Connection;
+use SergiyNezbritskiy\NovaPoshta\Models\Address;
+use SergiyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
 
 class AddressCrudTest extends TestCase
 {

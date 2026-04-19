@@ -1,16 +1,16 @@
 {
-    "name": "sergeynezbritskiy/nova-poshta-api",
+    "name": "sergiynezbritskiy/nova-poshta-api",
     "description": "Library for connecting to Nova Poshta API",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "SergeyNezbritskiy\\NovaPoshta\\": "src/"
+            "SergiyNezbritskiy\\NovaPoshta\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SergeyNezbritskiy\\NovaPoshta\\Tests\\": "tests/"
+            "SergiyNezbritskiy\\NovaPoshta\\Tests\\": "tests/"
         }
     },
     "require": {

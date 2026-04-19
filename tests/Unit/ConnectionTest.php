@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Tests\Unit;
+namespace SergiyNezbritskiy\NovaPoshta\Tests\Unit;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\TransferException;
@@ -11,12 +11,12 @@ use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use SergeyNezbritskiy\NovaPoshta\Connection;
-use SergeyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
+use SergiyNezbritskiy\NovaPoshta\Connection;
+use SergiyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
 
 /**
  * Class ConnectionTest
- * Unit tests for class \SergeyNezbritskiy\NovaPoshta\Connection
+ * Unit tests for class \SergiyNezbritskiy\NovaPoshta\Connection
  * @see Connection
  */
 class ConnectionTest extends TestCase

@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Tests\Unit;
+namespace SergiyNezbritskiy\NovaPoshta\Tests\Unit;
 
 use Exception;
 use PHPUnit\Framework\TestCase;
-use SergeyNezbritskiy\NovaPoshta\Client;
-use SergeyNezbritskiy\NovaPoshta\Models\Address;
+use SergiyNezbritskiy\NovaPoshta\Client;
+use SergiyNezbritskiy\NovaPoshta\Models\Address;
 
 /**
  * Class ClientTest
- * Unit test for \SergeyNezbritskiy\NovaPoshta\Client
+ * Unit test for \SergiyNezbritskiy\NovaPoshta\Client
  * @see Client
  */
 class ClientTest extends TestCase

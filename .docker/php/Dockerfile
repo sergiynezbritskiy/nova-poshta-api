@@ -1,5 +1,5 @@
 FROM php:8.3-fpm
-LABEL maintaner="Sergey Nezbritskiy"
+LABEL maintaner="Sergiy Nezbritskiy"
 
 RUN apt update && apt upgrade --yes
 RUN apt install --yes --no-install-recommends sudo nano vim wget git zip unzip git

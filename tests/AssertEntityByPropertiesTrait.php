@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Tests;
+namespace SergiyNezbritskiy\NovaPoshta\Tests;
 
 use PHPUnit\Framework\Assert;
 

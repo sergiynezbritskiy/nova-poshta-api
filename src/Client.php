@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta;
+namespace SergiyNezbritskiy\NovaPoshta;
 
 use GuzzleHttp\Client as HttpClient;
-use SergeyNezbritskiy\NovaPoshta\Models\Address;
-use SergeyNezbritskiy\NovaPoshta\Models\Common;
-use SergeyNezbritskiy\NovaPoshta\Models\ContactPerson;
-use SergeyNezbritskiy\NovaPoshta\Models\Counterparty;
-use SergeyNezbritskiy\NovaPoshta\Models\InternetDocument;
+use SergiyNezbritskiy\NovaPoshta\Models\Address;
+use SergiyNezbritskiy\NovaPoshta\Models\Common;
+use SergiyNezbritskiy\NovaPoshta\Models\ContactPerson;
+use SergiyNezbritskiy\NovaPoshta\Models\Counterparty;
+use SergiyNezbritskiy\NovaPoshta\Models\InternetDocument;
 
 /**
  * Class Client

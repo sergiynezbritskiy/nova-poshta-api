@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Tests\Integration\Models\Common;
+namespace SergiyNezbritskiy\NovaPoshta\Tests\Integration\Models\Common;
 
 use PHPUnit\Framework\TestCase;
-use SergeyNezbritskiy\NovaPoshta\Models\Common;
-use SergeyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
-use SergeyNezbritskiy\NovaPoshta\Tests\AssertEntityByPropertiesTrait;
-use SergeyNezbritskiy\NovaPoshta\Tests\UsesConnectionTrait;
+use SergiyNezbritskiy\NovaPoshta\Models\Common;
+use SergiyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
+use SergiyNezbritskiy\NovaPoshta\Tests\AssertEntityByPropertiesTrait;
+use SergiyNezbritskiy\NovaPoshta\Tests\UsesConnectionTrait;
 
 class GetPalletsListTest extends TestCase
 {

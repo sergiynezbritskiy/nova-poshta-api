@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Tests;
+namespace SergiyNezbritskiy\NovaPoshta\Tests;
 
 interface ConstantsInterface
 {
@@ -23,17 +23,17 @@ interface ConstantsInterface
     /**
      * Ідентифікатор типу відправлення Шина R-13, з довідника Види шин та дисків
      *
-     * @see \SergeyNezbritskiy\NovaPoshta\Models\Common::getTiresWheelsList
+     * @see \SergiyNezbritskiy\NovaPoshta\Models\Common::getTiresWheelsList
      */
     public const CARGO_TYPE_TIRES_WHEELS_DESCRIPTION = 'd7c456cf-aa8b-11e3-9fa0-0050568002cf';
 
     /**
-     * @see \SergeyNezbritskiy\NovaPoshta\Models\Common::getPalletsList()
+     * @see \SergiyNezbritskiy\NovaPoshta\Models\Common::getPalletsList()
      */
     public const CARGO_TYPE_PALLETS_DESCRIPTION = '627b0c26-d110-11dd-8c0d-001d92f78697';
 
     /**
-     * @see \SergeyNezbritskiy\NovaPoshta\Models\Common::getCargoDescriptionList()
+     * @see \SergiyNezbritskiy\NovaPoshta\Models\Common::getCargoDescriptionList()
      */
     public const CARGO_TYPE_CARGO_DESCRIPTION = '223a10d1-33f5-11e3-b441-0050568002cf';
 }
