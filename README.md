@@ -5,7 +5,6 @@ Library for connecting your PHP application with NovaPoshta API
 [![codecov](https://codecov.io/gh/sergiynezbritskiy/nova-poshta-api/branch/master/graph/badge.svg?token=73O936N4ZF)](https://codecov.io/gh/sergiynezbritskiy/nova-poshta-api)
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sergiynezbritskiy/nova-poshta-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sergiynezbritskiy/nova-poshta-api/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/sergiynezbritskiy/nova-poshta-api/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/sergiynezbritskiy/nova-poshta-api/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/sergiynezbritskiy/nova-poshta-api/badges/build.png?b=master)](https://scrutinizer-ci.com/g/sergiynezbritskiy/nova-poshta-api/build-status/master)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/sergiynezbritskiy/nova-poshta-api/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
