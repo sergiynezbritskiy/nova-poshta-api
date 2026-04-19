@@ -1,4 +1,4 @@
-FROM php:8.3-fpm
+FROM php:8.5-fpm
 LABEL maintaner="Sergiy Nezbritskiy"
 
 RUN apt update && apt upgrade --yes
