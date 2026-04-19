@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Tests\Integration\Models\Counterparty;
+namespace SergiyNezbritskiy\NovaPoshta\Tests\Integration\Models\Counterparty;
 
 use Exception;
 use PHPUnit\Framework\TestCase;
-use SergeyNezbritskiy\NovaPoshta\Models\ContactPerson;
-use SergeyNezbritskiy\NovaPoshta\Models\Counterparty;
-use SergeyNezbritskiy\NovaPoshta\Tests\ConstantsInterface;
-use SergeyNezbritskiy\NovaPoshta\Tests\UsesConnectionTrait;
+use SergiyNezbritskiy\NovaPoshta\Models\ContactPerson;
+use SergiyNezbritskiy\NovaPoshta\Models\Counterparty;
+use SergiyNezbritskiy\NovaPoshta\Tests\ConstantsInterface;
+use SergiyNezbritskiy\NovaPoshta\Tests\UsesConnectionTrait;
 
 class SavePrivatePersonTest extends TestCase implements ConstantsInterface
 {

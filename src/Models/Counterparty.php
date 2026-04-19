@@ -4,11 +4,11 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Models;
+namespace SergiyNezbritskiy\NovaPoshta\Models;
 
-use SergeyNezbritskiy\NovaPoshta\Connection;
-use SergeyNezbritskiy\NovaPoshta\ModelInterface;
-use SergeyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
+use SergiyNezbritskiy\NovaPoshta\Connection;
+use SergiyNezbritskiy\NovaPoshta\ModelInterface;
+use SergiyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
 
 /**
  * Class Counterparty

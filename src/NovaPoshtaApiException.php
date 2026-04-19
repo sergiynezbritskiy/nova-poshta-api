@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta;
+namespace SergiyNezbritskiy\NovaPoshta;
 
 use Exception;
 

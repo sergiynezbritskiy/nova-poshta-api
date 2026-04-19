@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Tests\Integration\Models\InternetDocument;
+namespace SergiyNezbritskiy\NovaPoshta\Tests\Integration\Models\InternetDocument;
 
 use DateTime;
 use PHPUnit\Framework\TestCase;
-use SergeyNezbritskiy\NovaPoshta\Models\InternetDocument;
-use SergeyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
-use SergeyNezbritskiy\NovaPoshta\Tests\AssertEntityByPropertiesTrait;
-use SergeyNezbritskiy\NovaPoshta\Tests\ConstantsInterface;
-use SergeyNezbritskiy\NovaPoshta\Tests\UsesConnectionTrait;
+use SergiyNezbritskiy\NovaPoshta\Models\InternetDocument;
+use SergiyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
+use SergiyNezbritskiy\NovaPoshta\Tests\AssertEntityByPropertiesTrait;
+use SergiyNezbritskiy\NovaPoshta\Tests\ConstantsInterface;
+use SergiyNezbritskiy\NovaPoshta\Tests\UsesConnectionTrait;
 
 class GetDocumentDeliveryDateTest extends TestCase implements ConstantsInterface
 {

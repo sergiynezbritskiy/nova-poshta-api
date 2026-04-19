@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Tests\Integration\Models\Address;
+namespace SergiyNezbritskiy\NovaPoshta\Tests\Integration\Models\Address;
 
 use PHPUnit\Framework\TestCase;
-use SergeyNezbritskiy\NovaPoshta\Models\Address;
-use SergeyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
-use SergeyNezbritskiy\NovaPoshta\Tests\ConstantsInterface;
-use SergeyNezbritskiy\NovaPoshta\Tests\UsesConnectionTrait;
+use SergiyNezbritskiy\NovaPoshta\Models\Address;
+use SergiyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
+use SergiyNezbritskiy\NovaPoshta\Tests\ConstantsInterface;
+use SergiyNezbritskiy\NovaPoshta\Tests\UsesConnectionTrait;
 
 class GetStreetTest extends TestCase implements ConstantsInterface
 {

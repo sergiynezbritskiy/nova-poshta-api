@@ -6,11 +6,11 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Models;
+namespace SergiyNezbritskiy\NovaPoshta\Models;
 
-use SergeyNezbritskiy\NovaPoshta\Connection;
-use SergeyNezbritskiy\NovaPoshta\ModelInterface;
-use SergeyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
+use SergiyNezbritskiy\NovaPoshta\Connection;
+use SergiyNezbritskiy\NovaPoshta\ModelInterface;
+use SergiyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
 
 class InternetDocument implements ModelInterface
 {
@@ -45,7 +45,7 @@ class InternetDocument implements ModelInterface
 
     /**
      * @see https://developers.novaposhta.ua/view/model/a90d323c-8512-11ec-8ced-005056b2dbe1/method/a91f115b-8512-11ec-8ced-005056b2dbe1
-     * @see \SergeyNezbritskiy\NovaPoshta\Tests\Integration\Models\InternetDocument\GetDocumentPriceTest for more cases
+     * @see \SergiyNezbritskiy\NovaPoshta\Tests\Integration\Models\InternetDocument\GetDocumentPriceTest for more cases
      * @param array $params
      *    $params = [
      *        'CitySender'          => (string) City ref. Required
@@ -93,7 +93,7 @@ class InternetDocument implements ModelInterface
 
     /**
      * @see https://developers.novaposhta.ua/view/model/a90d323c-8512-11ec-8ced-005056b2dbe1/method/a941c714-8512-11ec-8ced-005056b2dbe1
-     * @see \SergeyNezbritskiy\NovaPoshta\Tests\Integration\Models\InternetDocument\GetDocumentDeliveryDateTest
+     * @see \SergiyNezbritskiy\NovaPoshta\Tests\Integration\Models\InternetDocument\GetDocumentDeliveryDateTest
      * @param array $params
      *         $params = [
      *              'DateTime'      => (string), Document creation date, format `d.m.Y`. Optional.

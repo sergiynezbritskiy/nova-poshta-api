@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Tests;
+namespace SergiyNezbritskiy\NovaPoshta\Tests;
 
 use GuzzleHttp\Client;
 use RuntimeException;
-use SergeyNezbritskiy\NovaPoshta\Connection;
+use SergiyNezbritskiy\NovaPoshta\Connection;
 
 trait UsesConnectionTrait
 {

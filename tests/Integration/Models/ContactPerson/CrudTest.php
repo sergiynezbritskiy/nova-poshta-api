@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SergeyNezbritskiy\NovaPoshta\Tests\Integration\Models\ContactPerson;
+namespace SergiyNezbritskiy\NovaPoshta\Tests\Integration\Models\ContactPerson;
 
 use Exception;
 use PHPUnit\Framework\TestCase;
-use SergeyNezbritskiy\NovaPoshta\Models\ContactPerson;
-use SergeyNezbritskiy\NovaPoshta\Models\Counterparty;
-use SergeyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
-use SergeyNezbritskiy\NovaPoshta\Tests\UsesConnectionTrait;
+use SergiyNezbritskiy\NovaPoshta\Models\ContactPerson;
+use SergiyNezbritskiy\NovaPoshta\Models\Counterparty;
+use SergiyNezbritskiy\NovaPoshta\NovaPoshtaApiException;
+use SergiyNezbritskiy\NovaPoshta\Tests\UsesConnectionTrait;
 
 use function count;
 
