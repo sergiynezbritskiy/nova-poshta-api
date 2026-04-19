@@ -48,6 +48,7 @@ class Connection
                 'methodProperties' => $params
             ]);
             $response = $this->client->request('POST', self::API_URI, [
+                RequestOptions::TIMEOUT => 10,
                 RequestOptions::BODY => Utils::jsonEncode($request, JSON_UNESCAPED_UNICODE),
                 RequestOptions::HEADERS => [
                     'content-type' => 'application/json',

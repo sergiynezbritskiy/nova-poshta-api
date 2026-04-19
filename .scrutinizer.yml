@@ -9,7 +9,7 @@ filter:
 build:
   environment:
     php:
-      version: 8.4
+      version: 8.2
   tests:
     override:
       command: "php -v"
