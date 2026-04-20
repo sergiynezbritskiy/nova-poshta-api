@@ -19,7 +19,7 @@ class Connection
     private const ERROR_MSG_TEMPLATE = 'Connection to Nova Poshta API failed: %s';
     private string $apiKey;
     private HttpClient $client;
-    private array $options;
+    private array $options; //@phpstan-ignore-line
 
     /**
      * @param string $apiKey
@@ -39,12 +39,10 @@ class Connection
      * @param array $params
      * @return array
      * @throws NovaPoshtaApiException
-     * @SuppressWarnings(PHPMD.StaticAccess)
      */
     public function post(string $model, string $method, array $params = []): array
     {
         try {
-
             $request = array_filter([
                 'apiKey' => $this->apiKey,
                 'modelName' => $model,
@@ -90,6 +88,7 @@ class Connection
     /**
      * @param array $request
      * @return array
+     * @SuppressWarnings(PHPMD.StaticAccess)
      */
     public function buildOptions(array $request): array
     {
